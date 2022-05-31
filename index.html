@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        * {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            size:12px;
+        }
+        a {	
+            text-decoration: none;
+	        color: white; 
+        }
+	    li {
+	        position: absolute;
+	        left: 0px;
+	        width: 80px; 
+            height: 50px;
+	        background: #10f555;
+	        border: 1px solid rgb(179, 255, 129);
+            transition-property: all;
+	        /* transition-property: width background; */
+	        transition-duration: 1s;
+            line-height: 50px;
+            padding: 0 20px;
+	    }
+ 	    li:hover {
+            width: 200px;
+	        transition-timing-function: ease-out;
+	        background: #dbff79;
+	        text-align: center;
+	        font-size: 30px;
+	    }
+    </style>
+</head>
+<body>
+    <ul>
+	<li style="top:50px"><a href="#" target="new">HOME</a></li>
+	<li style="top:100px"><a href="#" target="new">ABOUT</a></li>
+	<li style="top:150px"><a href="#" target="new">NEWS</a></li>
+	<li style="top:200px"><a href="#" target="new">STUDY</a></li>
+	<li style="top:250px"><a href="#" target="new">CONTACT</a></li>
+    </ul>
+	<head>
+		<style>
+		body,html {
+			margin: 0; padding: 0;
+		}
+		#transition {
+			width: 500px;
+			height: 500px;
+			background: 
+			linear-gradient(217deg, rgb(182, 245, 11), rgb(255, 208, 0)),
+			linear-gradient(217deg, rgb(255, 240, 23), rgb(44, 177, 255)),
+			linear-gradient(217deg, rgb(253, 255, 132), rgb(0, 162, 255));
+	
+			transition: width 2s ease .7s;
+		}
+		#transition:hover {
+			width: 100%;
+		}
+		</style>
+	</head>
+	<body>
+		<div id="transition"></div>
+	</body>
+
+</body>
+</html>
